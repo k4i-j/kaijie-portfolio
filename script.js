@@ -28,7 +28,7 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-// Dark mode
+// Dark mode toggle
 document.getElementById("darkToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
