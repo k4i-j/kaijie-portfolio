@@ -4,6 +4,8 @@
   --accent: #00aaff;
   --testimonial-bg: #f9f9f9;
   --testimonial-text: #111;
+  --project-bg: #f0f0f0;
+  --project-text: #111;
 }
 
 body {
@@ -40,26 +42,37 @@ h2 {
 
 section {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .project-card {
-  border: 2px solid var(--accent);
-  padding: 1rem;
-  border-radius: 10px;
+  background-color: var(--project-bg);
+  color: var(--project-text);
+  border-left: 5px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s, background-color 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  background-color: #f0faff;
+  background-color: #e0f7ff;
+}
+
+.project-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .testimonial {
@@ -68,16 +81,6 @@ section {
   padding: 1rem;
   margin: 0.5rem 0;
   border-left: 4px solid var(--accent);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-ul li {
-  margin: 0.5rem 0;
 }
 
 footer {
@@ -97,10 +100,13 @@ footer {
   transform: none;
 }
 
+/* Dark mode theme */
 body.dark {
   --bg: #121212;
   --text: #f5f5f5;
   --accent: #7abaff;
   --testimonial-bg: #1e1e1e;
   --testimonial-text: #f0f0f0;
+  --project-bg: #1a1a1a;
+  --project-text: #f0f0f0;
 }
