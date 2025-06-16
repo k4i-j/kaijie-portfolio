@@ -83,6 +83,17 @@ section {
   border-left: 4px solid var(--accent);
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+
 footer {
   text-align: center;
   padding: 2rem;
