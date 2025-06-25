@@ -1,5 +1,5 @@
 // Typing animation
-const text = "Aspiring Mechatronics Engineer | Coder | Innovator";
+const text = "Aspiring Mechatronics Engineer | Innovator";
 let i = 0;
 const speed = 50;
 const introText = document.getElementById("introText");
