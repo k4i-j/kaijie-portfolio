@@ -120,3 +120,10 @@ body.dark {
   --project-bg: #1a1a1a;
   --project-text: #f0f0f0;
 }
+
+#awards ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 40px;
+}
